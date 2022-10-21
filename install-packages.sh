@@ -2,9 +2,9 @@
 set -euo pipefail
 export DEBIAN_FRONTEND=noninteractive
 apt-get update
-apt-get -y upgrade
 apt-get -y install apt-utils
-apt-get -y install git nano wget
+apt-get -y upgrade
+apt-get -y install git nano wget cron
 apt-get -y install software-properties-common
 apt-get -y install ffmpeg
 apt-get -y install exiftool
