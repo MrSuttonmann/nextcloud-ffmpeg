@@ -1,4 +1,4 @@
-FROM nextcloud:fpm
+FROM nextcloud
 
 COPY install-packages.sh .
 RUN chmod +x install-packages.sh
