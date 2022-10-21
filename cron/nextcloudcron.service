@@ -1,0 +1,7 @@
+[Unit]
+Desription=Nextcloud cron.php job
+
+[Service]
+User=www-data
+ExecStart=/usr/bun/php -f /var/www/nextcloud/cron.php
+KillMode=process
