@@ -21,6 +21,6 @@ jobs:
       run:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag lightswitchr/nextcloud-ffmpeg:$(date +%s)
+      run: docker build . --file Dockerfile --tag lightswitchr/nextcloud-ffmpeg:latest
     - name: Docker push
-      run: docker push ${{secrets.DOCKER_USER}}/nextcloud-ffmpeg
+      run: docker push ${{secrets.DOCKER_USER}}/nextcloud-ffmpeg:latest
